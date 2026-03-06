@@ -85,7 +85,7 @@ export const listSchools = (req,res)=>{
             return {...school,dist}
         })
 
-        schoolsDistance.sort((a,b)=>a.distance - b.distance)
+        schoolsDistance.sort((a,b)=>a.dist - b.dist)
 
         return res.status(200).json(schoolsDistance)
 
